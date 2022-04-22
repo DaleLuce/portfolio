@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Intro, Lamp } from "./styles/Home.Styled";
-import { Container } from "./styles/Global.Styled";
-import { ReactComponent as LampLightOn } from "../Icons/lamplighton.svg";
-import { ReactComponent as LampBeigeOff } from "../Icons/lampBeigeOff.svg";
+import { Intro, Line, LineBox, IntroBox } from "./styles/Home.Styled";
+import { Container, ContainerHalf } from "./styles/Global.Styled";
+
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "../themes.js";
+import { Birds } from "../components/Birds";
 
 export function Home() {
   const [theme, setTheme] = useState("light");
@@ -16,18 +16,17 @@ export function Home() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <Container className="typeA">
-        <Intro>
-          Hi, My Name Is Dale.{" "}
-          <Lamp>
-            {theme === "light" ? (
-              <LampLightOn onClick={() => themeToggler()} />
-            ) : (
-              <LampBeigeOff onClick={() => themeToggler()} />
-            )}
-          </Lamp>
-        </Intro>
-      </Container>
+      <ContainerHalf className="typeA">
+        <IntroBox>
+          <Intro>
+            <Line>Hello World.</Line>
+          </Intro>
+
+          <LineBox>
+            <Line>My Name is Dale.</Line>
+          </LineBox>
+        </IntroBox>
+      </ContainerHalf>
     </ThemeProvider>
   );
 }

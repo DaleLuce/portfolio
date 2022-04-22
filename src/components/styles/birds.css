@@ -1,0 +1,399 @@
+.container {
+  width: 100vw;
+  height: 50vh;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 50vh;
+  background: radial-gradient(circle at 50% 1250%, #f4d35e 12%, #da4167 42%);
+  background-position: bottom;
+}
+
+.cloud-box-high {
+  position: relative;
+  top: -85px;
+  left: 0;
+  -webkit-animation-name: float;
+          animation-name: float;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 108s;
+          animation-duration: 108s;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+
+.cloud-box-mid {
+  position: relative;
+  top: 45px;
+  -webkit-animation-name: float;
+          animation-name: float;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 115s;
+          animation-duration: 115s;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+
+.cloud-box-low {
+  position: relative;
+  top: 95px;
+  -webkit-animation-name: float;
+          animation-name: float;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 125s;
+          animation-duration: 125s;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+
+.cloud-one {
+  background-image: url(../../assets/cloudsBirdsStars/cloud1.svg);
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: 0px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.cloud-two {
+  background-image: url(../../assets/cloudsBirdsStars/cloud2.svg);
+  background-size: auto 100%;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: 20vw;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.cloud-three {
+  background-image: url(../../assets/cloudsBirdsStars/cloud3.svg);
+  background-size: auto 100%;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: -1850px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.cloud-four {
+  background-image: url(../../assets/cloudsBirdsStars/cloud4.svg);
+  background-size: auto 100%;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top: -120px;
+  left: -2450px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.cloud-five {
+  background-image: url(../../assets/cloudsBirdsStars/cloud5.svg);
+  background-size: auto 100%;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: -2750px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.cloud-six {
+  background-image: url(../../assets/cloudsBirdsStars/cloud6.svg);
+  background-size: auto 100%;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: -3050px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.cloud-seven {
+  background-image: url(../../assets/cloudsBirdsStars/cloud7.svg);
+  background-size: auto 100%;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: -1850px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.cloud-eight {
+  background-image: url(../../assets/cloudsBirdsStars/cloud8.svg);
+  background-size: auto 100%;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: -3050px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateX(-80vw);
+            transform: translateX(-80vw);
+  }
+  100% {
+    -webkit-transform: translateX(170vw);
+            transform: translateX(170vw);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateX(-80vw);
+            transform: translateX(-80vw);
+  }
+  100% {
+    -webkit-transform: translateX(170vw);
+            transform: translateX(170vw);
+  }
+}
+
+.bird {
+  background-image: url(../../assets/cloudsBirdsStars/Allbirds.svg);
+  background-size: auto 100%;
+  width: 150px;
+  height: 175px;
+  will-change: background-position;
+  -webkit-animation-name: fly-cycle;
+          animation-name: fly-cycle;
+  -webkit-animation-timing-function: steps(30);
+          animation-timing-function: steps(30);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.bird--one {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+
+.bird--two {
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+
+.bird--three {
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+
+.bird--four {
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+.bird--five {
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.bird--six {
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.bird--seven {
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.bird-box {
+  position: absolute;
+  top: 14%;
+  left: -10%;
+  -webkit-transform: scale(0.4) translateX(-10vw);
+          transform: scale(0.4) translateX(-10vw);
+  will-change: transform;
+  -webkit-animation-name: fly-right-one;
+          animation-name: fly-right-one;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.bird-box--one {
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.bird-box--two {
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+  -webkit-animation-delay: 6.2s;
+          animation-delay: 6.2s;
+}
+
+.bird-box-high {
+  position: absolute;
+  top: -10%;
+  will-change: transform;
+  -webkit-animation-name: fly-right-one;
+          animation-name: fly-right-one;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.bird-box-high--one {
+  -webkit-animation-duration: 23s;
+          animation-duration: 23s;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+
+.bird-box-high--two {
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.bird-container {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  -webkit-transform: scale(0) translateX(-10vw);
+          transform: scale(0) translateX(-10vw);
+  will-change: transform;
+  -webkit-animation-name: fly-right-one;
+          animation-name: fly-right-one;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.bird-container--one {
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+}
+
+.bird-container--two {
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+  -webkit-animation-delay: 6.1s;
+          animation-delay: 6.1s;
+}
+
+@-webkit-keyframes fly-cycle {
+  100% {
+    background-position: -4500px 0;
+  }
+}
+
+@keyframes fly-cycle {
+  100% {
+    background-position: -4500px 0;
+  }
+}
+
+@-webkit-keyframes fly-right-one {
+  0% {
+    -webkit-transform: scale(0.3) translateX(-10vw);
+            transform: scale(0.3) translateX(-10vw);
+  }
+  10% {
+    -webkit-transform: translateY(2vh) translateX(10vw) scale(0.4);
+            transform: translateY(2vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    -webkit-transform: translateY(0vh) translateX(30vw) scale(0.5);
+            transform: translateY(0vh) translateX(30vw) scale(0.5);
+  }
+  30% {
+    -webkit-transform: translateY(4vh) translateX(50vw) scale(0.6);
+            transform: translateY(4vh) translateX(50vw) scale(0.6);
+  }
+  40% {
+    -webkit-transform: translateY(2vh) translateX(70vw) scale(0.6);
+            transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
+  50% {
+    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
+            transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
+  60% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+  100% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
+
+@keyframes fly-right-one {
+  0% {
+    -webkit-transform: scale(0.3) translateX(-10vw);
+            transform: scale(0.3) translateX(-10vw);
+  }
+  10% {
+    -webkit-transform: translateY(2vh) translateX(10vw) scale(0.4);
+            transform: translateY(2vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    -webkit-transform: translateY(0vh) translateX(30vw) scale(0.5);
+            transform: translateY(0vh) translateX(30vw) scale(0.5);
+  }
+  30% {
+    -webkit-transform: translateY(4vh) translateX(50vw) scale(0.6);
+            transform: translateY(4vh) translateX(50vw) scale(0.6);
+  }
+  40% {
+    -webkit-transform: translateY(2vh) translateX(70vw) scale(0.6);
+            transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
+  50% {
+    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
+            transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
+  60% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+  100% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
+/*# sourceMappingURL=birds.css.map */
