@@ -14,22 +14,22 @@ export function Birds() {
       <div className="cloud-box-mid">
         <div className="cloud-three"></div>
       </div>
-      <div className="cloud-box-high">
-        <div className="cloud-four"></div>
-      </div>
       <div className="cloud-box-mid">
         <div className="cloud-five"></div>
       </div>
-      <div className="cloud-box-low">
-        <div className="cloud-six"></div>
+      <div className="cloud-box-high">
+        <div className="cloud-four"></div>
       </div>
+
+      {/* <div className="cloud-box-mid">
+        <div className="cloud-six"></div>
+      </div> */}
       <div className="cloud-box-mid">
         <div className="cloud-seven"></div>
       </div>
       <div className="cloud-box-low">
         <div className="cloud-eight"></div>
       </div>
-
       <div className="bird-container bird-container--two">
         <div className="bird bird--five"></div>
       </div>
@@ -50,6 +50,10 @@ export function Birds() {
 
       <div className="bird-container bird-container--one">
         <div className="bird bird--three"></div>
+      </div>
+
+      <div className="cloud-box-low">
+        <div className="cloud-nine"></div>
       </div>
 
       <div className="bird-box bird-box--six">

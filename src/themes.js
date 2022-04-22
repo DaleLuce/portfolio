@@ -15,8 +15,8 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  main: "#2e4057",
-  secondary: "#f6d8ae",
+  main: "#7f7f7f",
+  secondary: "083d77",
   xmain: "#f6d8ae",
   xsecondary: "#083d77",
 };

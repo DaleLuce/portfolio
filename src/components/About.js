@@ -4,6 +4,8 @@ import {
   AboutContainer,
   AboutText,
   Icons,
+  IconBox,
+  IconTextBox,
 } from "./styles/About.Styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -23,35 +25,58 @@ export function About() {
       <AboutContainer>
         {/* <img src={icon} alt="" width="400" height="400"></img> */}
         <AboutText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-          fermentum ut massa vel porttitor. Sed ac tempor libero. Cras felis
-          leo, euismod vitae laoreet ornare, tempus at magna. Nunc nec
-          vestibulum nisi. Pellentesque neque ex, cursus consequat ultrices
-          feugiat, lacinia eu augue. Ut tempor arcu at vestibulum sollicitudin.
-          Ut a massa sit amet ex volutpat fermentum eu in leo. In velit enim,
-          semper sed erat eu, hendrerit ullamcorper diam. Mauris semper volutpat
-          risus aliquam volutpat. Nam interdum vitae justo sit amet vehicula.
-          Sed ac tempor libero. Cras felis leo, euismod vitae laoreet ornare,
-          tempus at magna. Nunc nec vestibulum nisi. Pellentesque neque ex.
+          I am a fullstack web developer based in NYC. I have a background in
+          print and small business development, and I am a passionate life long
+          learner with an insatiable curiosity. I strive to build attractive,
+          elegant and efficient solutions to whatever problems I'm trying to
+          solve. <br />
+          <br />
+          When I'm not building websites or applications, I enjoy riding bikes
+          around the city, playing drums, writing music, and spending time with
+          my dog.
+          <br />
+          <br />I have experience with the following technologies...
         </AboutText>
       </AboutContainer>
       <Icons>
-        {/* <IconBoxOne> */}
-        <JavaScript width="70px" />
-        <Html width="66px" />
-        <Css width="66px" />
-        {/* </IconBoxOne> */}
-        {/* <IconBoxTwo> */}
-        <ReactIcon width="70px" />
-        <Redux width="70px" />
-        <Sass width="70px" />
-        {/* </IconBoxTwo> */}
-        {/* <IconBoxThree> */}
+        <IconBox>
+          <JavaScript width="70px" />
+          <IconTextBox>Javascript</IconTextBox>
+        </IconBox>
 
-        <Sequelize width="70px" />
-        <Node width="70px" />
-        <Postgres width="70px" />
-        {/* </IconBoxThree> */}
+        <IconBox>
+          <Html width="66px" />
+          <IconTextBox>HTML5</IconTextBox>
+        </IconBox>
+
+        <IconBox>
+          <Css width="66px" />
+          <IconTextBox>CSS3</IconTextBox>
+        </IconBox>
+        <IconBox>
+          <ReactIcon width="70px" />
+          <IconTextBox>React</IconTextBox>
+        </IconBox>
+        <IconBox>
+          <Redux width="70px" />
+          <IconTextBox>Redux</IconTextBox>
+        </IconBox>
+        <IconBox>
+          <Sass width="70px" />
+          <IconTextBox>Sass</IconTextBox>
+        </IconBox>
+        <IconBox>
+          <Sequelize width="70px" />
+          <IconTextBox>Sequelize</IconTextBox>
+        </IconBox>
+        <IconBox>
+          <Node width="70px" />
+          <IconTextBox>Node.JS</IconTextBox>
+        </IconBox>
+        <IconBox>
+          <Postgres width="70px" />
+          <IconTextBox>Postgres</IconTextBox>
+        </IconBox>
       </Icons>
     </MainContainer>
   );

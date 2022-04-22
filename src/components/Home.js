@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Intro, Line, LineBox, IntroBox } from "./styles/Home.Styled";
+import { Intro, Line, LineBox, LineBoxx, IntroBox } from "./styles/Home.Styled";
 import { Container, ContainerHalf } from "./styles/Global.Styled";
 
 import { ThemeProvider } from "styled-components";
@@ -16,7 +16,9 @@ export function Home() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <ContainerHalf className="typeA">
+
+      <Container className="typeB">
+        <Birds />
         <IntroBox>
           <Intro>
             <Line>Hello World.</Line>
@@ -25,8 +27,11 @@ export function Home() {
           <LineBox>
             <Line>My Name is Dale.</Line>
           </LineBox>
+          {/* <LineBoxx>
+          <Line>My Name is Dale.</Line>
+        </LineBoxx> */}
         </IntroBox>
-      </ContainerHalf>
+      </Container>
     </ThemeProvider>
   );
 }

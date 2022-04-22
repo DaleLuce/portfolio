@@ -33,10 +33,10 @@ export function Projects() {
           </ImageDiv>
           <WordDiv>
             <Blurb>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              et est sapien. Nulla vulputate odio nec turpis faucibus, sit amet
-              vulputate nulla laoreet. Donec mollis ante non tortor placerat, a
-              scelerisque erat bibendum.
+              This web app is designed to give the user weather updates when it
+              matters the most. Utilizing the National Weather Service API, I
+              keep my users in the know with text messages so they never have to
+              regret not checking the weather again.
             </Blurb>
           </WordDiv>
         </MainDiv>
@@ -49,10 +49,10 @@ export function Projects() {
           </ImageDiv>
           <WordDiv>
             <Blurb>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              et est sapien. Nulla vulputate odio nec turpis faucibus, sit amet
-              vulputate nulla laoreet. Donec mollis ante non tortor placerat, a
-              scelerisque erat bibendum.
+              This project is designed to help a user visualize the potential
+              results of smarter spending and investing habits. I worked in a
+              team of 4 developers to create this project, focusing mostly on
+              UI/UX and user onboarding.
             </Blurb>
           </WordDiv>
         </MainDiv>
@@ -65,10 +65,11 @@ export function Projects() {
           </ImageDiv>
           <WordDiv>
             <Blurb>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              et est sapien. Nulla vulputate odio nec turpis faucibus, sit amet
-              vulputate nulla laoreet. Donec mollis ante non tortor placerat, a
-              scelerisque erat bibendum.
+              This E-commerce project is designed to provide the user with a
+              modern shopping experience, while browsing the finst vodkas, never
+              from Russia. I worked on this project in a team of 4 developers
+              and focused on the shopping cart and user checkout functionality,
+              as well as the overall UI/UX.
             </Blurb>
           </WordDiv>
         </MainDiv>

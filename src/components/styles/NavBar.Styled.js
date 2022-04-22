@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Nav = styled.div`
-  posititon: sticky;
-  top: 0px;
-  height: 18vh;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 14vh;
   display: flex;
   align-items: end;
-  justify-content: flex-end;
-  height: auto;
+  justify-content: center;
   width: 100vw;
   background-color: #083d77;
   color: #f4d35e;
@@ -48,6 +48,7 @@ export const Links = styled.div`
 `;
 
 export const LightBulb = styled.div`
+  height: 23vh;
   transform: rotate(90deg);
 
   &:hover {

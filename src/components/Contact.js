@@ -5,14 +5,15 @@ import {
   FormLabel,
   ContentBox,
   NameBox,
+  Submit,
 } from "./styles/Contact.Styled";
 import { FormDiv, Title } from "./styles/Contact.Styled";
+import StyledComponents from "styled-components";
 // import { GlobalStyles } from "../themes";
 
 export function Contact() {
   return (
     <>
-      {/* <GlobalStyles /> */}
       <ContactContainer className="contactA">
         <Title>Get in touch!</Title>
         <FormDiv>
@@ -24,6 +25,7 @@ export function Contact() {
 
             <FormLabel htmlFor="content">How can I help?</FormLabel>
             <ContentBox type="text" id="content"></ContentBox>
+            <Submit>Submit</Submit>
           </form>
         </FormDiv>
 

@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -14,7 +14,7 @@
 
 .cloud-box-high {
   position: relative;
-  top: -85px;
+  top: 50px;
   left: 0;
   -webkit-animation-name: float;
           animation-name: float;
@@ -22,30 +22,28 @@
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 108s;
-          animation-duration: 108s;
+  -webkit-animation-duration: 80s;
+          animation-duration: 80s;
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
 }
 
 .cloud-box-mid {
   position: relative;
-  top: 45px;
+  top: 225px;
   -webkit-animation-name: float;
           animation-name: float;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 115s;
-          animation-duration: 115s;
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
+  -webkit-animation-duration: 98s;
+          animation-duration: 98s;
 }
 
 .cloud-box-low {
   position: relative;
-  top: 95px;
+  top: 335px;
   -webkit-animation-name: float;
           animation-name: float;
   -webkit-animation-timing-function: linear;
@@ -54,8 +52,6 @@
           animation-iteration-count: infinite;
   -webkit-animation-duration: 125s;
           animation-duration: 125s;
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
 }
 
 .cloud-one {
@@ -85,9 +81,9 @@
   width: 400px;
   height: 350px;
   position: relative;
-  left: -1850px;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  left: -1050px;
+  -webkit-transform: scale(1.4) rotate(-1.5deg);
+          transform: scale(1.4) rotate(-1.5deg);
 }
 
 .cloud-four {
@@ -108,9 +104,9 @@
   width: 400px;
   height: 350px;
   position: relative;
-  left: -2750px;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  left: -2050px;
+  -webkit-transform: scale(1.2) translateX(-125px) translateY(-100px);
+          transform: scale(1.2) translateX(-125px) translateY(-100px);
 }
 
 .cloud-six {
@@ -120,8 +116,6 @@
   height: 350px;
   position: relative;
   left: -3050px;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
 }
 
 .cloud-seven {
@@ -141,15 +135,24 @@
   width: 400px;
   height: 350px;
   position: relative;
-  left: -3050px;
+  left: 700vw;
+  left: -310vw;
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
+.cloud-nine {
+  background-image: url(../../assets/cloudsBirdsStars/cloud2.svg);
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: -400vw;
+}
+
 @-webkit-keyframes float {
   0% {
-    -webkit-transform: translateX(-80vw);
-            transform: translateX(-80vw);
+    -webkit-transform: translateX(-65vw);
+            transform: translateX(-65vw);
   }
   100% {
     -webkit-transform: translateX(170vw);
@@ -159,8 +162,8 @@
 
 @keyframes float {
   0% {
-    -webkit-transform: translateX(-80vw);
-            transform: translateX(-80vw);
+    -webkit-transform: translateX(-65vw);
+            transform: translateX(-65vw);
   }
   100% {
     -webkit-transform: translateX(170vw);

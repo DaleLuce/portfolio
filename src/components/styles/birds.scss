@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -16,31 +16,31 @@
 
 .cloud-box-high {
   position: relative;
-  top: -85px;
+  top: 50px;
   left: 0;
   animation-name: float;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 108s;
+  animation-duration: 80s;
   animation-delay: -0.8s;
 }
 .cloud-box-mid {
   position: relative;
-  top: 45px;
+  top: 225px;
   animation-name: float;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 115s;
-  animation-delay: -0.8s;
+  animation-duration: 98s;
+  // animation-delay: -0.8s;
 }
 .cloud-box-low {
   position: relative;
-  top: 95px;
+  top: 335px;
   animation-name: float;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 125s;
-  animation-delay: -0.8s;
+  // animation-delay: -0.8s;
 }
 .cloud-one {
   background-image: url(../../assets/cloudsBirdsStars/cloud1.svg);
@@ -65,8 +65,9 @@
   width: 400px;
   height: 350px;
   position: relative;
-  left: -1850px;
-  transform: scale(1.4);
+  left: -1050px;
+  // left: 300vw;
+  transform: scale(1.4) rotate(-1.5deg);
 }
 .cloud-four {
   background-image: url(../../assets/cloudsBirdsStars/cloud4.svg);
@@ -80,12 +81,13 @@
 }
 .cloud-five {
   background-image: url(../../assets/cloudsBirdsStars/cloud5.svg);
+  // background-color: aliceblue;
   background-size: auto 100%;
   width: 400px;
   height: 350px;
   position: relative;
-  left: -2750px;
-  transform: scale(1.4);
+  left: -2050px;
+  transform: scale(1.2) translateX(-125px) translateY(-100px);
 }
 .cloud-six {
   background-image: url(../../assets/cloudsBirdsStars/cloud6.svg);
@@ -94,7 +96,7 @@
   height: 350px;
   position: relative;
   left: -3050px;
-  transform: scale(1.4);
+  // transform: scale(1.4);
 }
 .cloud-seven {
   background-image: url(../../assets/cloudsBirdsStars/cloud7.svg);
@@ -111,13 +113,23 @@
   width: 400px;
   height: 350px;
   position: relative;
-  left: -3050px;
+  left: 700vw;
+  // left: -3050px;
+  left: -310vw;
   transform: scale(1.4);
+}
+
+.cloud-nine {
+  background-image: url(../../assets/cloudsBirdsStars/cloud2.svg);
+  width: 400px;
+  height: 350px;
+  position: relative;
+  left: -400vw;
 }
 
 @keyframes float {
   0% {
-    transform: translateX(-80vw);
+    transform: translateX(-65vw);
   }
 
   100% {

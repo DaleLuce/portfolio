@@ -15,7 +15,6 @@ function App() {
     <>
       <NavBar />
       <Home />
-      <Birds />
       <About />
       <Projects />
       <Contact />

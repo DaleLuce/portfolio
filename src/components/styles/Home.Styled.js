@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Intro = styled.div`
   position: absolute;
-  top: 95px;
+  top: 40vh;
   font-size: 5vw;
   font-weight: 800;
   width: max-content;
@@ -11,20 +11,30 @@ export const Intro = styled.div`
 
 export const LineBox = styled.div`
   position: absolute;
-  top: 160px;
+  top: 50vh;
   font-size: 5vw;
   font-weight: 800;
   width: max-content;
 
   z-index: 1;
 `;
+export const LineBoxx = styled.div`
+  position: absolute;
+  top: 60vh;
+  font-size: 5vw;
+  font-weight: 800;
+  width: 290vw;
+  // width: 2850px;
+
+  z-index: 1;
+`;
 
 export const Line = styled.div`
-  align-text: left;
-
+  margin: auto;
+  width: max-content;
   &:after {
     content: "";
-    background-color: #da4167;
+    background-color: #083d77;
     height: 11px;
     display: block;
     position: absolute;
@@ -36,5 +46,7 @@ export const Line = styled.div`
 
 export const IntroBox = styled.div`
   width: 50vw;
-  text alig
+  // height: 50vh;
+  // background-color: #f4d35e;
+  // z-index: 3;
 `;
