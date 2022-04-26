@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import { Container } from "./styles/Global.Styled";
 import {
   MainContainer,
@@ -8,6 +10,9 @@ import {
   IconTextBox,
 } from "./styles/About.Styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme, GlobalStyles } from "../themes";
 
 import { ReactComponent as JavaScript } from "../assets/icons/js.svg";
 import { ReactComponent as Html } from "../assets/icons/html.svg";
@@ -20,8 +25,18 @@ import { ReactComponent as Node } from "../assets/icons/node.svg";
 import { ReactComponent as Postgres } from "../assets/icons/postgres.svg";
 
 export function About() {
+  const [theme, setTheme] = useState("light");
+  // const [theme, setTheme] = useState({ theme });
+  const whatsthetheme = () => {
+    console.log(theme, "about");
+  };
+  // const themeToggler = () => {
+  //   theme === "light" ? setTheme("dark") : setTheme("light");
+  // };
   return (
-    <MainContainer className="typeA">
+    // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    //   <GlobalStyles />
+    <MainContainer className="typeB" onClick={whatsthetheme}>
       <AboutContainer>
         {/* <img src={icon} alt="" width="400" height="400"></img> */}
         <AboutText>
@@ -79,5 +94,6 @@ export function About() {
         </IconBox>
       </Icons>
     </MainContainer>
+    // </ThemeProvider>
   );
 }

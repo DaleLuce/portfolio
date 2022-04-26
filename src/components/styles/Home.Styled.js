@@ -1,5 +1,20 @@
 import styled from "styled-components";
 
+export const MainContainer = styled.div`
+  background-color: ${(props) => props.theme.secondary};
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+`;
+
+export const Image = styled.img`
+  width: 40vw;
+`;
 export const Intro = styled.div`
   position: absolute;
   top: 40vh;
@@ -15,17 +30,6 @@ export const LineBox = styled.div`
   font-size: 5vw;
   font-weight: 800;
   width: max-content;
-
-  z-index: 1;
-`;
-export const LineBoxx = styled.div`
-  position: absolute;
-  top: 60vh;
-  font-size: 5vw;
-  font-weight: 800;
-  width: 290vw;
-  // width: 2850px;
-
   z-index: 1;
 `;
 
@@ -34,7 +38,8 @@ export const Line = styled.div`
   width: max-content;
   &:after {
     content: "";
-    background-color: #083d77;
+    background-color: ${(props) => props.theme.secondary};
+
     height: 11px;
     display: block;
     position: absolute;
@@ -46,7 +51,4 @@ export const Line = styled.div`
 
 export const IntroBox = styled.div`
   width: 50vw;
-  // height: 50vh;
-  // background-color: #f4d35e;
-  // z-index: 3;
 `;

@@ -6,12 +6,75 @@
   overflow: hidden;
   display: flex;
   min-height: 50vh;
-  background: radial-gradient(
-    circle at 50% 1250%,
-    rgba(244, 211, 94, 1) 12%,
-    rgba(218, 65, 103, 1) 42%
-  );
-  background-position: bottom;
+  // background: radial-gradient(
+  //   circle at 50% 250%,
+  //   rgba(244, 211, 94, 1) 12%,
+  //   rgba(218, 65, 103, 1) 42%
+  // );
+  // background-position: bottom;
+  // background-color: #da4167;
+}
+
+.sunContainer {
+  position: absolute;
+  width: 15vw;
+  top: 90px;
+  right: 40px;
+  z-index: -1;
+  // animation-name: float;
+  // animation-timing-function: linear;
+  // animation-iteration-count: infinite;
+  // animation-duration: 80s;
+  // animation-delay: -0.8s;
+}
+.sun {
+  background-image: url(../../assets/cloudsBirdsStars/sun.svg);
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  right: 0;
+  // background-repeat: no-repeat;
+  // background-color: white;
+}
+.sunset {
+  animation-name: goDown;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes goDown {
+  10% {
+    transform: translateY(-2px);
+  }
+  12% {
+    transform: translateY(-3px) translateX(-3px);
+  }
+  14% {
+    transform: translateY(-4px) translateX(3px);
+  }
+  16% {
+    transform: translateY(-6px) translateX(-3px);
+  }
+  18% {
+    transform: translateY(-8px) translateX(3px);
+  }
+  20% {
+    transform: translateY(-6px) translateX(-3px);
+  }
+  22% {
+    transform: translateY(-4px) translateX(3px);
+  }
+  24% {
+    transform: translateY(-3px) translateX(-3px);
+  }
+  26% {
+    transform: translateY(-2px) translateX(3px);
+  }
+
+  100% {
+    transform: translateY(100vh) translateX(1200px);
+  }
 }
 
 .cloud-box-high {

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const JobContainer = styled.div`
+  background-color: ${(props) => props.theme.accent};
+  color: ${(props) => props.theme.accentTwo};
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -9,6 +11,18 @@ export const JobContainer = styled.div`
   height: 75vh;
   flex-wrap: wrap;
 `;
+
+// export const JobContainerB = styled.div`
+//   background-color: ${(props) => props.theme.main};
+//   color: ${(props) => props.theme.secondary};
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: row;
+//   position: relative;
+//   width: 100vw;
+//   height: 75vh;
+//   flex-wrap: wrap;
+// `;
 
 export const Card = styled.div`
   width: 95%;
@@ -38,7 +52,7 @@ export const Title = styled.div`
 
   &:after {
     content: "";
-    background-color: #083d77;
+    background-color: ${(props) => props.theme.secondary};
     height: 12px;
     display: block;
     position: absolute;

@@ -9,15 +9,24 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Birds } from "./components/Birds";
 // const StyledApp = styled.div``;
+// import { ThemeProvider } from "styled-components";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
   return (
     <>
-      <NavBar />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <NavBar />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </ThemeProvider>
     </>
   );
 }

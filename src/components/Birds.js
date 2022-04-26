@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/birds.css";
+import { ThemeProvider } from "styled-components";
+
+import { lightTheme, darkTheme, GlobalStyles } from "../themes.js";
 
 export function Birds() {
+  // const [theme, setTheme] = useState("light");
+
+  // const themeToggler = () => {
+  //   console.log("holler", theme);
+  //   theme === "light" ? setTheme("dark") : setTheme("light");
+  // };
+
   return (
+    // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    // <GlobalStyles />
     <div className="container">
       <div className="cloud-box-high">
         <div className="cloud-one"></div>
       </div>
-
       <div className="cloud-box-low">
         <div className="cloud-two"></div>
       </div>
@@ -20,10 +31,6 @@ export function Birds() {
       <div className="cloud-box-high">
         <div className="cloud-four"></div>
       </div>
-
-      {/* <div className="cloud-box-mid">
-        <div className="cloud-six"></div>
-      </div> */}
       <div className="cloud-box-mid">
         <div className="cloud-seven"></div>
       </div>
@@ -59,6 +66,11 @@ export function Birds() {
       <div className="bird-box bird-box--six">
         <div className="bird bird--six"></div>
       </div>
+
+      <div className="sunContainer sunset">
+        <div className="sun"></div>
+      </div>
     </div>
+    // </ThemeProvider>
   );
 }

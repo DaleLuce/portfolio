@@ -18,23 +18,23 @@ export function NavBar() {
   };
 
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <GlobalStyles />
-      <Nav>
-        <Links>
-          <Link>Home</Link>
-          <Link>About</Link>
-          <Link>Projects</Link>
-          <Link>Contact</Link>
-        </Links>
-        {/* <LightBulb>
+    // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    //   <GlobalStyles />
+    <Nav>
+      <Links>
+        <Link>Home</Link>
+        <Link>About</Link>
+        <Link>Projects</Link>
+        <Link>Contact</Link>
+      </Links>
+      {/* <LightBulb>
           {theme === "light" ? (
             <LightOn onClick={() => themeToggler()} />
           ) : (
             <LightOff onClick={() => themeToggler()} />
           )}
         </LightBulb> */}
-      </Nav>
-    </ThemeProvider>
+    </Nav>
+    // </ThemeProvider>
   );
 }

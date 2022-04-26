@@ -1,4 +1,4 @@
-import react from "react";
+import react, { useState } from "react";
 import { Container } from "./styles/Global.Styled";
 import {
   ContactContainer,
@@ -8,28 +8,34 @@ import {
   Submit,
 } from "./styles/Contact.Styled";
 import { FormDiv, Title } from "./styles/Contact.Styled";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme, GlobalStyles } from "../themes.js";
+
 import StyledComponents from "styled-components";
 // import { GlobalStyles } from "../themes";
 
 export function Contact() {
+  const [theme, setTheme] = useState("light");
+
   return (
-    <>
-      <ContactContainer className="contactA">
-        <Title>Get in touch!</Title>
-        <FormDiv>
-          <form>
-            <FormLabel htmlFor="name">Who are you?</FormLabel>
-            <br></br>
-            <NameBox type="text" id="name"></NameBox>
-            <br></br>
+    // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    //   <GlobalStyles />
+    <ContactContainer className="frog">
+      <Title>Get in touch!</Title>
+      <FormDiv>
+        <form>
+          <FormLabel htmlFor="name">Who are you?</FormLabel>
+          <br></br>
+          <NameBox type="text" id="name"></NameBox>
+          <br></br>
 
-            <FormLabel htmlFor="content">How can I help?</FormLabel>
-            <ContentBox type="text" id="content"></ContentBox>
-            <Submit>Submit</Submit>
-          </form>
-        </FormDiv>
+          <FormLabel htmlFor="content">How can I help?</FormLabel>
+          <ContentBox type="text" id="content"></ContentBox>
+          <Submit>Submit</Submit>
+        </form>
+      </FormDiv>
 
-        {/* <FormDiv>
+      {/* <FormDiv>
           <form
             action="mailto:Dale@luce.codes"
             method="get"
@@ -63,7 +69,7 @@ export function Contact() {
             </div>
           </form>
         </FormDiv> */}
-      </ContactContainer>
-    </>
+    </ContactContainer>
+    // </ThemeProvider>
   );
 }

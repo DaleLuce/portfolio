@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Container } from "./styles/Global.Styled";
 import { lightTheme, darkTheme, GlobalStyles } from "../themes.js";
 import { ThemeProvider } from "styled-components";
 
 import {
   JobContainer,
+  JobContainerB,
   Card,
   Title,
   TitleB,
@@ -23,9 +23,13 @@ export function Projects() {
   const [theme, setTheme] = useState("light");
 
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    //   <GlobalStyles />
+
+    // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <>
       <GlobalStyles />
-      <JobContainer className="jobA">
+      <JobContainer className="typeA">
         <Title>Heycouldyoutextmeifitsgoingtorain.com</Title>
         <MainDiv>
           <ImageDiv>
@@ -41,11 +45,11 @@ export function Projects() {
           </WordDiv>
         </MainDiv>
       </JobContainer>
-      <JobContainer className="typeA">
+      <JobContainer className="typeB">
         <TitleB>shouldaCoulda</TitleB>
         <MainDiv>
           <ImageDiv>
-            <Image src={shoulda} alt="" />{" "}
+            <Image src={shoulda} alt="" />
           </ImageDiv>
           <WordDiv>
             <Blurb>
@@ -57,11 +61,11 @@ export function Projects() {
           </WordDiv>
         </MainDiv>
       </JobContainer>
-      <JobContainer className="jobA">
+      <JobContainer className="typeA">
         <Title>Nyet</Title>
         <MainDiv>
           <ImageDiv>
-            <Image src={nyet} alt="" />{" "}
+            <Image src={nyet} alt="" />
           </ImageDiv>
           <WordDiv>
             <Blurb>
@@ -74,6 +78,6 @@ export function Projects() {
           </WordDiv>
         </MainDiv>
       </JobContainer>
-    </ThemeProvider>
+    </>
   );
 }
