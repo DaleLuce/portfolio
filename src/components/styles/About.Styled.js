@@ -4,7 +4,6 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  // position: relative;
   width: 100vw;
   height: 70vh;
   flex-wrap: wrap;
@@ -36,13 +35,6 @@ export const Icons = styled.div`
 `;
 
 export const IconBox = styled.div`
-  // // display: flex;
-  // display: block;
-  // flex-direction: column;
-  // width: 9%;
-  // height: max-content;
-  // padding: 2px;
-  // justify-content: center;
   align-self: flex-end;
 `;
 
@@ -50,7 +42,3 @@ export const IconTextBox = styled.div`
   margin: auto;
   width: max-content;
 `;
-
-export const IconBoxTwo = styled.div``;
-
-export const IconBoxThree = styled.div``;

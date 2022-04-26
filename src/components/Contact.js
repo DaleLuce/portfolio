@@ -20,7 +20,7 @@ export function Contact() {
   return (
     // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
     //   <GlobalStyles />
-    <ContactContainer className="frog">
+    <ContactContainer className="contact">
       <Title>Get in touch!</Title>
       <FormDiv>
         <form>

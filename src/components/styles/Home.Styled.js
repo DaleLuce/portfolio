@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  background-color: ${(props) => props.theme.secondary};
-
+  color: #f4d35e;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -38,8 +37,7 @@ export const Line = styled.div`
   width: max-content;
   &:after {
     content: "";
-    background-color: ${(props) => props.theme.secondary};
-
+    background-color: ${(props) => props.theme.two};
     height: 11px;
     display: block;
     position: absolute;

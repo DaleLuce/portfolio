@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContactContainer = styled.div`
   height: 85vh;
   margin: auto;
+  color: #f4d35e;
 `;
 
 export const Title = styled.div`

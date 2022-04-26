@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const JobContainer = styled.div`
-  background-color: ${(props) => props.theme.accent};
-  color: ${(props) => props.theme.accentTwo};
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -52,7 +50,9 @@ export const Title = styled.div`
 
   &:after {
     content: "";
-    background-color: ${(props) => props.theme.secondary};
+    background-color: black;
+    background-color: ${(props) => props.theme.two};
+
     height: 12px;
     display: block;
     position: absolute;
@@ -74,7 +74,7 @@ export const TitleB = styled.div`
 
   &:after {
     content: "";
-    background-color: #da4167;
+    background-color: ${(props) => props.theme.two};
     height: 12px;
     display: block;
     position: absolute;

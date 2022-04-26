@@ -4,101 +4,57 @@ let beige = "#f6d8ae";
 let blue = "#083d77";
 let pink = "#da4167";
 let yellow = "#f4d35e";
-let gray = "#808080";
+let gray = "#2e4057";
 
 export const lightTheme = {
-  main: beige,
-  secondary: blue,
-  accent: pink,
-  accentTwo: yellow,
+  one: pink,
+  two: blue,
+  three: beige,
+  four: blue,
+  five: blue,
 };
 
 export const darkTheme = {
-  main: gray,
-  secondary: blue,
-  accent: blue,
-  accentTwo: yellow,
+  one: blue,
+  two: pink,
+  three: gray,
+  four: yellow,
+  five: gray,
 };
 
 export const GlobalStyles = createGlobalStyle`
+// one pink = blue
+// two blue = pink
+// three beige = gray
+// four blue = yellow
+// five blue = gray
 
  .typeA{
-  background-color: ${(props) => props.theme.accent};
-  color: ${(props) => props.theme.accentTwo};
+   background-color: ${(props) => props.theme.one};
+    color: #f4d35e;
 }
-
 .typeB{
-  background-color: ${(props) => props.theme.main};
-  color: ${(props) => props.theme.secondary};
-}
- .frog{
-  background-color:${(props) => props.theme.secondary};
-  color: ${(props) => props.theme.accentTwo};
+  background-color: ${(props) => props.theme.three};
+  color: ${(props) => props.theme.four};
 }
 
+ .contact{
+  background-color:${(props) => props.theme.five};
+}
 `;
 
-// export const lightTheme = {
-//   main: "#f6d8ae",
-//   secondary: "#083d77",
-//   accent: "#da4167",
-//   accentTwo: "#f4d35e",
-//   accentThree: "#2e4057",
+// home / job 1/ job 3
+// bg pink blue          one var --
+// color yellow yellow   static --
+// underline blue pink    two var --
 
-//   xmain: "#2e4057",
-//   xsecondary: "#f4d35e",
-//   xaccent: "#f6d8ae",
-//   xaccentTwo: "#083d77",
-//   xaccentThree: "#da4167",
-// };
+// job 2 / about
+// bg beige gray         three var --
+// color blue yellow     four var --
+// text underline pink    static --
+// screenshop underline blue/pink two var
 
-// export const darkTheme = {
-//   main: "#2e4057",
-//   secondary: "#f6d8ae",
-//   xmain: "#f6d8ae",
-//   xsecondary: "#083d77",
-// };
-
-// export const GlobalStyles = createGlobalStyle`
-
-// .typeA{
-//   background-color: ${(props) => props.theme.main};
-//   color: ${(props) => props.theme.secondary};
-
-// }
-// .typeB{
-//   background-color: ${(props) => props.theme.xmain};
-//   color: ${(props) => props.theme.xsecondary};
-
-// }
-
-// .projectCardA{
-//  background-color: ${(props) => props.theme.accent};
-//   color: ${(props) => props.theme.accentTwo};
-
-// }
-
-// .projectCardB{
-//  background-color: ${(props) => props.theme.xmain};
-//   color: ${(props) => props.theme.xsecondary};
-// }
-// .projectCardC{
-//    background-color: ${(props) => props.theme.xmain};
-//   color: ${(props) => props.theme.xsecondary};
-// }
-
-// .jobA{
-//    background-color: ${(props) => props.theme.accent};
-//   color: ${(props) => props.theme.accentTwo};
-// }
-
-// .jobB{
-//    background-color: ${(props) => props.theme.accent};
-//   color: ${(props) => props.theme.accentTwo};
-// }
-
-// .contactA{
-//   background-color:  ${(props) => props.theme.ce};
-// }
-
-// `;
+// tactcon
+// bg blue gray           five var --
+// color yellow yellow     static
+// underline pink pink     static
