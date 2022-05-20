@@ -4,7 +4,7 @@ export const Nav = styled.div`
   position: fixed;
   top: 0;
   z-index: 2;
-  height: 14vh;
+  height: 8vw;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -16,17 +16,15 @@ export const Nav = styled.div`
 export const Link = styled.div`
   position: relative;
   width: max-content;
-  font-size: 28pt;
+  font-size: 3.5vw;
   font-weight: 700;
-  height: max-content;
-  margin: 20px;
-  margin-bottom: 20px;
-  z-index: 1;
+  margin-bottom: 1.38vh;
+  //z-index: 1;
 
   &:after {
     content: "";
     background-color: #da4167;
-    height: 12px;
+    height: 1vw;
     display: block;
     position: absolute;
     width: 100%;
@@ -45,14 +43,4 @@ export const Links = styled.div`
   width: 70vw;
   display: flex;
   justify-content: space-evenly;
-`;
-
-export const LightBulb = styled.div`
-  height: 23vh;
-  transform: rotate(90deg);
-
-  &:hover {
-    transition: 0.1s ease-in-out;
-    transform: rotate(90deg) scale(1.125);
-  }
 `;

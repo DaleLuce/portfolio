@@ -5,6 +5,7 @@ let blue = "#083d77";
 let pink = "#da4167";
 let yellow = "#f4d35e";
 let gray = "#2e4057";
+let mobile = "700px";
 
 export const lightTheme = {
   one: pink,
@@ -12,6 +13,7 @@ export const lightTheme = {
   three: beige,
   four: blue,
   five: blue,
+  mobile: mobile,
 };
 
 export const darkTheme = {
@@ -20,6 +22,7 @@ export const darkTheme = {
   three: gray,
   four: yellow,
   five: gray,
+  mobile: mobile,
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -29,16 +32,15 @@ export const GlobalStyles = createGlobalStyle`
 // four blue = yellow
 // five blue = gray
 
- .typeA{
-   background-color: ${(props) => props.theme.one};
-    color: #f4d35e;
+.typeA{
+  background-color: ${(props) => props.theme.one};
+  color: #f4d35e;
 }
 .typeB{
   background-color: ${(props) => props.theme.three};
   color: ${(props) => props.theme.four};
 }
-
- .contact{
+.contact{
   background-color:${(props) => props.theme.five};
 }
 `;

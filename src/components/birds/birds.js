@@ -1,21 +1,28 @@
 import React, { useState } from "react";
-import "./styles/birds.css";
+import "./birds.css";
 import { ThemeProvider } from "styled-components";
 
-import { lightTheme, darkTheme, GlobalStyles } from "../themes.js";
+import { lightTheme, darkTheme, GlobalStyles } from "../../themes.js";
 
 export function Birds() {
-  // const [theme, setTheme] = useState("light");
-
-  // const themeToggler = () => {
-  //   console.log("holler", theme);
-  //   theme === "light" ? setTheme("dark") : setTheme("light");
-  // };
+  const [theme, setTheme] = useState("light");
+  const [night, setNight] = useState(false);
+  const [animate, setAnimate] = useState(false);
+  const handleClick = () => {
+    setAnimate(!animate);
+    setTimeout(() => {
+      setNight(!night);
+      console.log(animate);
+    }, "1000");
+  };
 
   return (
     // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
     // <GlobalStyles />
-    <div className="container">
+    <div className="container" onClick={handleClick}>
+      <div className="starbox">
+        <div className="star1"></div>
+      </div>
       <div className="cloud-box-high">
         <div className="cloud-one"></div>
       </div>
@@ -40,13 +47,9 @@ export function Birds() {
       <div className="bird-container bird-container--two">
         <div className="bird bird--five"></div>
       </div>
-      <div className="bird-box bird-box--one">
+      <div className="bird-box">
         <div className="bird bird--six"></div>
       </div>
-      <div className="bird-box bird-box--two">
-        <div className="bird bird--seven"></div>
-      </div>
-
       <div className="bird-box-high bird-box-high--one">
         <div className="bird bird--one"></div>
       </div>
@@ -63,13 +66,14 @@ export function Birds() {
         <div className="cloud-nine"></div>
       </div>
 
-      <div className="bird-box bird-box--six">
-        <div className="bird bird--six"></div>
+      <div className="bird-box bird-box--one">
+        <div className="bird bird--five"></div>
       </div>
-
-      <div className="sunContainer sunset">
-        <div className="sun"></div>
-      </div>
+      {!night && (
+        <div className={animate ? "sunContainer sunset" : "sunContainer"}>
+          <div className="sun"></div>
+        </div>
+      )}
     </div>
     // </ThemeProvider>
   );
