@@ -9,16 +9,20 @@ export function Birds() {
   const [night, setNight] = useState(false);
   const [animate, setAnimate] = useState(false);
   const handleClick = () => {
-    setAnimate(!animate);
-    setTimeout(() => {
+    if (!animate) {
+      setAnimate(!animate);
+      setTimeout(() => {
+        setNight(!night);
+        console.log("day");
+      }, "1000");
+    } else {
+      setAnimate(!animate);
       setNight(!night);
-      console.log(animate);
-    }, "1000");
+      console.log("night");
+    }
   };
 
   return (
-    // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-    // <GlobalStyles />
     <div className="container" onClick={handleClick}>
       <div className="starbox">
         <div className="star1"></div>
@@ -70,11 +74,12 @@ export function Birds() {
         <div className="bird bird--five"></div>
       </div>
       {!night && (
-        <div className={animate ? "sunContainer sunset" : "sunContainer"}>
+        <div
+          className={animate ? "sunContainer sunset" : "sunContainer sunrise"}
+        >
           <div className="sun"></div>
         </div>
       )}
     </div>
-    // </ThemeProvider>
   );
 }

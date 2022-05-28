@@ -13,9 +13,9 @@ import { ReactComponent as JavaScript } from "../../assets/icons/js.svg";
 import { ReactComponent as Html } from "../../assets/icons/html.svg";
 import { ReactComponent as Css } from "../../assets/icons/css.svg";
 import { ReactComponent as ReactIcon } from "../../assets/icons/react.svg";
-import { ReactComponent as Redux } from "../../assets/icons/redux.svg";
+// import { ReactComponent as Redux } from "../../assets/icons/redux.svg";
 import { ReactComponent as Sass } from "../../assets/icons/sass.svg";
-import { ReactComponent as Sequelize } from "../../assets/icons/sequelize.svg";
+// import { ReactComponent as Sequelize } from "../../assets/icons/sequelize.svg";
 import { ReactComponent as Node } from "../../assets/icons/node.svg";
 import { ReactComponent as Postgres } from "../../assets/icons/postgres.svg";
 
@@ -63,18 +63,18 @@ export function About() {
           <ReactIcon fill={fill} width={iconWidth} />
           <IconTextBox>React</IconTextBox>
         </IconBox>
-        <IconBox>
+        {/* <IconBox>
           <Redux fill={fill} width={iconWidth} />
           <IconTextBox>Redux</IconTextBox>
-        </IconBox>
+        </IconBox> */}
         <IconBox>
           <Sass fill={fill} width={iconWidth} />
           <IconTextBox>Sass</IconTextBox>
         </IconBox>
-        <IconBox>
-          <Sequelize fill={fill} width={iconWidth} />
+        {/* <IconBox>
+        <Sequelize fill={fill} width={iconWidth} />
           <IconTextBox>Sequelize</IconTextBox>
-        </IconBox>
+        </IconBox> */}
         <IconBox>
           <Node fill={fill} width={iconWidth} />
           <IconTextBox>Node.JS</IconTextBox>

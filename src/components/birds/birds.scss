@@ -79,10 +79,13 @@
   animation-duration: 1s;
 }
 .sunrise {
-  animation: comeUp 5.5s ease-in-out 8s forwards;
+  animation-name: comeUp;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: forwards;
+  animation-duration: 1s;
 }
 
-@keyframs twinkle {
+@keyframes twinkle {
   1% {
     transform: scale(0.8);
   }
@@ -181,8 +184,8 @@
   from {
     transform: translateY(100%) translateX(120%);
   }
-  50% {
-    transform: translateY(50%) translateX(60%);
+  20% {
+    transform: translateY(0px) translateX(0px);
   }
   to {
     transform: translateY(0px) translateX(0px);
