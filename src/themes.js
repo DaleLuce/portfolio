@@ -13,7 +13,7 @@ export const lightTheme = {
   three: beige,
   four: blue,
   five: blue,
-  mobile: mobile,
+  six: yellow,
 };
 
 export const darkTheme = {
@@ -22,7 +22,7 @@ export const darkTheme = {
   three: gray,
   four: yellow,
   five: gray,
-  mobile: mobile,
+  six: beige,
 };
 
 export const GlobalStyles = createGlobalStyle`

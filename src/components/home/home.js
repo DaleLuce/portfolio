@@ -9,7 +9,11 @@ export function Home({ toggleTheme }) {
   return (
     <>
       <GlobalStyles />
-      <MainContainer className="typeA" onClick={() => toggleTheme()}>
+      <MainContainer
+        id="homeSection"
+        className="typeA"
+        onClick={() => toggleTheme()}
+      >
         <Birds />
         <IntroBox>
           <Intro>

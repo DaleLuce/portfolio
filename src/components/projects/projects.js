@@ -9,6 +9,8 @@ import {
   ImageDiv,
   WordDiv,
   MainDiv,
+  Main,
+  Link,
 } from "./projects.styled";
 import heycouldyou from "../../assets/projectScreenshots/heycouldyou.png";
 import nyet from "../../assets/projectScreenshots/nyet.png";
@@ -16,13 +18,26 @@ import shoulda from "../../assets/projectScreenshots/shoulda.png";
 
 export function Projects() {
   return (
-    <>
+    <Main id="projectSection">
       <JobContainer className="typeA">
-        <Title>Heycouldyoutextmeifitsgoingtorain.com</Title>
+        <Link
+          target="_blank"
+          href="https://github.com/DaleLuce/heycouldyoutextmeifitsgonnarain"
+          rel="noreferrer"
+        >
+          <Title>Heycouldyoutextmeifitsgoingtorain.com</Title>
+        </Link>
+
         <MainDiv>
-          <ImageDiv>
-            <Image src={heycouldyou} alt="" />
-          </ImageDiv>
+          <Link
+            target="_blank"
+            href="https://github.com/DaleLuce/heycouldyoutextmeifitsgonnarain"
+            rel="noreferrer"
+          >
+            <ImageDiv>
+              <Image src={heycouldyou} alt="" />
+            </ImageDiv>
+          </Link>
           <WordDiv>
             <Blurb>
               This web app is designed to give the user weather updates when it
@@ -34,11 +49,23 @@ export function Projects() {
         </MainDiv>
       </JobContainer>
       <JobContainer className="typeB">
-        <TitleB>shouldaCoulda</TitleB>
+        <Link
+          target="_blank"
+          href="https://shouldacoulda.herokuapp.com/"
+          rel="noreferrer"
+        >
+          <TitleB>shouldaCoulda</TitleB>
+        </Link>
         <MainDiv>
-          <ImageDiv>
-            <Image src={shoulda} alt="" />
-          </ImageDiv>
+          <Link
+            target="_blank"
+            href="https://shouldacoulda.herokuapp.com/"
+            rel="noreferrer"
+          >
+            <ImageDiv>
+              <Image src={shoulda} alt="" />
+            </ImageDiv>
+          </Link>
           <WordDiv>
             <Blurb>
               This project is designed to help a user visualize the potential
@@ -50,11 +77,23 @@ export function Projects() {
         </MainDiv>
       </JobContainer>
       <JobContainer className="typeA">
-        <Title>Nyet</Title>
+        <Link
+          target="_blank"
+          href="https://cyndaquil-grace-shopper.herokuapp.com/"
+          rel="noreferrer"
+        >
+          <Title>Nyet</Title>
+        </Link>
         <MainDiv>
-          <ImageDiv>
-            <Image src={nyet} alt="" />
-          </ImageDiv>
+          <Link
+            target="_blank"
+            href="https://cyndaquil-grace-shopper.herokuapp.com/"
+            rel="noreferrer"
+          >
+            <ImageDiv>
+              <Image src={nyet} alt="" />
+            </ImageDiv>
+          </Link>
           <WordDiv>
             <Blurb>
               This E-commerce project is designed to provide the user with a
@@ -66,6 +105,6 @@ export function Projects() {
           </WordDiv>
         </MainDiv>
       </JobContainer>
-    </>
+    </Main>
   );
 }

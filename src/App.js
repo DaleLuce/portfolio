@@ -21,9 +21,9 @@ function App() {
     <>
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <Navbar />
-        <Home toggleTheme={toggleTheme} />
-        <About />
-        <Projects />
+        <Home id="home" toggleTheme={toggleTheme} />
+        <About id="about" />
+        <Projects id="projects" />
         <Contact />
       </ThemeProvider>
     </>

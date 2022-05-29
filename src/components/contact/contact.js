@@ -49,7 +49,7 @@ export function Contact() {
   };
 
   return (
-    <ContactContainer className="contact">
+    <ContactContainer id="contactForm" className="contact">
       {!sent ? (
         <>
           <Title>Get in touch!</Title>

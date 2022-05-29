@@ -14,27 +14,20 @@ export const MainContainer = styled.div`
 export const Intro = styled.div`
   position: absolute;
   top: 40vh;
-  font-size: 6vw;
+  font-size: clamp(2em, 5vw, 5em);
   font-weight: 800;
   width: max-content;
   z-index: 1;
-  @media (max-width: 700px) {
-    font-size: 10vw;
-    left: 5vw;
-  }
 `;
 
 export const LineBox = styled.div`
   position: absolute;
   top: 50vh;
-  font-size: 6vw;
+  font-size: clamp(2em, 5vw, 5em);
+
   font-weight: 800;
   width: max-content;
   z-index: 1;
-  @media (max-width: 700px) {
-    font-size: 10vw;
-    left: 5vw;
-  }
 `;
 
 export const Line = styled.div`
@@ -58,5 +51,5 @@ export const Line = styled.div`
 
 export const IntroBox = styled.div`
   width: 50vw;
-  height: 2vw;
+  height: 500px;
 `;

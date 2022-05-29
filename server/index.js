@@ -25,10 +25,9 @@ app.post("/send_mail", cors(), async (req, res) => {
   var mailOptions = {
     from: contact,
     to: "dale@luce.codes",
-    subject: "Inquiry from luce.codes from " + name,
-    text: contact + " <--contact " + " content-----> " + content,
+    subject: "luce.codes inquiry from " + name,
+    text: contact + " <--contact----- " + "-----content-----> " + content,
   };
-
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log(error);

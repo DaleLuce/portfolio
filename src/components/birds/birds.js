@@ -71,7 +71,7 @@ export function Birds() {
       </div>
 
       <div className="bird-box bird-box--one">
-        <div className="bird bird--five"></div>
+        <div className="bird bird--one"></div>
       </div>
       {!night && (
         <div

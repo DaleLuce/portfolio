@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  height: 85vh;
+  height: 84vh;
+  min-height: 600px;
   margin: auto;
   color: #f4d35e;
+  @media (max-width: 800px) {
+    height: 91vh;
+  }
 `;
 
 export const Title = styled.div`
@@ -35,9 +39,8 @@ export const Title = styled.div`
 `;
 
 export const FormLabel = styled.label`
-  font-size: 1.6em;
+  font-size: clamp(20px, 4vw, 30px);
   @media (max-width: 800px) {
-    font-size: 6vw;
     margin-bottom: 30px;
     margin-top: 30px;
   }

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
+  scroll-margin-top: 9vw;
   display: flex;
   justify-content: center;
   flex-direction: row;

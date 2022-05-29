@@ -13,9 +13,9 @@ import { ReactComponent as JavaScript } from "../../assets/icons/js.svg";
 import { ReactComponent as Html } from "../../assets/icons/html.svg";
 import { ReactComponent as Css } from "../../assets/icons/css.svg";
 import { ReactComponent as ReactIcon } from "../../assets/icons/react.svg";
-// import { ReactComponent as Redux } from "../../assets/icons/redux.svg";
+import { ReactComponent as Redux } from "../../assets/icons/redux.svg";
 import { ReactComponent as Sass } from "../../assets/icons/sass.svg";
-// import { ReactComponent as Sequelize } from "../../assets/icons/sequelize.svg";
+import { ReactComponent as Sequelize } from "../../assets/icons/sequelize.svg";
 import { ReactComponent as Node } from "../../assets/icons/node.svg";
 import { ReactComponent as Postgres } from "../../assets/icons/postgres.svg";
 
@@ -26,9 +26,11 @@ export function About() {
   const iconWidth = "6vw";
   const themeContext = useContext(ThemeContext);
   const fill = themeContext.four;
+  const fillTwo = themeContext.one;
+  const fillThree = themeContext.six;
 
   return (
-    <MainContainer className="typeB">
+    <MainContainer id="aboutSection" className="typeB">
       <AboutContainer>
         <AboutText>
           I am a fullstack web developer based in NYC. I have a background in
@@ -37,11 +39,10 @@ export function About() {
           elegant and efficient solutions to whatever problems I'm trying to
           solve. <br />
           <br />
-          When I'm not building websites or applications, I enjoy riding bikes
-          around the city, playing drums, writing music, and spending time with
-          my dog.
+          When I'm not building software, I enjoy riding bikes around the city,
+          playing drums, writing music, and spending time with my dog.
           <br />
-          <br />I have experience with the following technologies...
+          <br />I have experience with the following technologies:
         </AboutText>
       </AboutContainer>
       <Icons>
@@ -63,18 +64,18 @@ export function About() {
           <ReactIcon fill={fill} width={iconWidth} />
           <IconTextBox>React</IconTextBox>
         </IconBox>
-        {/* <IconBox>
+        <IconBox>
           <Redux fill={fill} width={iconWidth} />
           <IconTextBox>Redux</IconTextBox>
-        </IconBox> */}
+        </IconBox>
         <IconBox>
           <Sass fill={fill} width={iconWidth} />
           <IconTextBox>Sass</IconTextBox>
         </IconBox>
-        {/* <IconBox>
-        <Sequelize fill={fill} width={iconWidth} />
+        <IconBox>
+          <Sequelize fill={fill} width={iconWidth} />
           <IconTextBox>Sequelize</IconTextBox>
-        </IconBox> */}
+        </IconBox>
         <IconBox>
           <Node fill={fill} width={iconWidth} />
           <IconTextBox>Node.JS</IconTextBox>
@@ -84,6 +85,11 @@ export function About() {
           <IconTextBox>Postgres</IconTextBox>
         </IconBox>
       </Icons>
+      <AboutText>
+        I can help your company or organization build custom web sites,
+        e-commerce sites &amp; applications. On top of writing code, I enjoy
+        UI/UX design, illustration, and graphic design.
+      </AboutText>
     </MainContainer>
   );
 }
