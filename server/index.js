@@ -38,7 +38,7 @@ app.post("/send_mail", cors(), async (req, res) => {
   });
 });
 
-var server = app.listen(4000, "0.0.0.0", function () {
+var server = app.listen(4000, function () {
   var host = server.address().address;
   var port = server.address().port;
   console.log("i heard it all at http://%s:%s", host, port);
