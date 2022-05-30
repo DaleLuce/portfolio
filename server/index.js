@@ -29,6 +29,7 @@ app.post("/send_mail", cors(), async (req, res) => {
     text: contact + " <--contact----- " + "-----content-----> " + content,
   };
   transporter.sendMail(mailOptions, function (error, info) {
+    console.log("this is in sendmail before  if");
     if (error) {
       console.log(error);
     } else {
