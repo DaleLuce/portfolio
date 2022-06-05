@@ -57,19 +57,16 @@ export function Birds() {
       <div className="bird-box-high bird-box-high--one">
         <div className="bird bird--one"></div>
       </div>
-
       <div className="bird-box-high bird-box-high--two">
         <div className="bird bird--two"></div>
       </div>
-
       <div className="bird-container bird-container--one">
         <div className="bird bird--three"></div>
       </div>
-
       <div className="cloud-box-low">
         <div className="cloud-nine"></div>
       </div>
-
+      //test
       <div className="bird-box bird-box--one">
         <div className="bird bird--one"></div>
       </div>
