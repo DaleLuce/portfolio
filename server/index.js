@@ -3,13 +3,11 @@ var app = express();
 
 require("dotenv").config();
 
-const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.post("/send_mail", cors(), async (req, res) => {
   let { content, contact, name } = req.body;
@@ -41,5 +39,5 @@ app.post("/send_mail", cors(), async (req, res) => {
 var server = app.listen(4000, function () {
   var host = server.address().address;
   var port = server.address().port;
-  console.log("i heard it all at http://%s:%s", host, port);
+  console.log("i heard it all", server, host, port);
 });
