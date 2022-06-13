@@ -39,5 +39,5 @@ app.post("/send_mail", cors(), async (req, res) => {
 var server = app.listen(4000, function () {
   var host = server.address().address;
   var port = server.address().port;
-  console.log("i heard it all", server, host, port);
+  console.log("i heard it all", server,'-------',server._events.request.path(),'--e.r.path()----','-------',server._events.request.route(),'-e.r.route()----','-------',app.path(),'---app.path()---' host, port);
 });
