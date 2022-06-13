@@ -19,7 +19,7 @@ export function Contact() {
     content: "",
   });
 
-  const url = "https://monkfish-app-ivezc.ondigitalocean.app/";
+  const url = "https://luce.codes/";
 
   const disableButton = (formState) => {
     for (let key in formState) {
