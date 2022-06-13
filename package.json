@@ -35,7 +35,6 @@
       "react-app/jest"
     ]
   },
-  "proxy": "https://luce.codes",
   "browserslist": {
     "production": [
       ">0.2%",
