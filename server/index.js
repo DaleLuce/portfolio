@@ -42,15 +42,13 @@ var server = app.listen(4000, function () {
   console.log(
     "i heard it all",
     server,
+    "---<<sever----",
+    server._events.request.path,
+    "-<<<<-e.r.path()----",
     "-------",
-    server._events.request.path(),
-    "--e.r.path()----",
-    "-------",
-    server._events.request.route(),
-    "-e.r.route()----",
-    "-------",
-    app.path(),
-    "---app.path()---",
+    server._events.request.route,
+    "-<<<<<<e.r.route()----",
+
     host,
     port
   );
