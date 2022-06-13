@@ -19,6 +19,8 @@ export function Contact() {
     content: "",
   });
 
+  const url = "https://monkfish-app-ivezc.ondigitalocean.app/";
+
   const disableButton = (formState) => {
     for (let key in formState) {
       if (!formState[key]) return true;
@@ -35,7 +37,7 @@ export function Contact() {
       setSent(true);
       try {
         const { contact, content, name } = formState;
-        await axios.post("http://localhost:4000/send_mail", {
+        await axios.post(url + "/send_mail", {
           contact,
           content,
           name,
