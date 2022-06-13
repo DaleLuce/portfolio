@@ -37,7 +37,7 @@ export function Contact() {
       setSent(true);
       try {
         const { contact, content, name } = formState;
-        await axios.post("http://localhost:4000/send_mail", {
+        await axios.post("http://luce.codes:4000/send_mail", {
           contact,
           content,
           name,
