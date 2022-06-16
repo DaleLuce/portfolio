@@ -27,8 +27,9 @@ export const AboutText = styled.div`
   margin: 5vh auto;
   width: 70vw;
   @media (max-width: 800px) {
-    font-size: 3vw;
+    font-size: 4vw;
     margin-top: 20px;
+    font-weight: 400;
   }
 `;
 
@@ -45,6 +46,12 @@ export const Icons = styled.div`
 export const IconBox = styled.div`
   margin: 8px;
   flex-basis: 7%;
+  @media (max-width: 800px) {
+    flex-basis: 22%;
+  }
+  @media (max-width: 425px) {
+    flex-basis: 20%;
+  }
 `;
 
 export const IconTextBox = styled.div`
