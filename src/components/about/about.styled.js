@@ -21,13 +21,13 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutText = styled.div`
-  font-size: 1.8vw;
+  font-size: 2vw;
   text-align: justify;
   font-weight: 400;
   margin: 5vh auto;
   width: 70vw;
   @media (max-width: 800px) {
-    font-size: 4vw;
+    font-size: 3vw;
     margin-top: 20px;
   }
 `;
@@ -44,7 +44,7 @@ export const Icons = styled.div`
 
 export const IconBox = styled.div`
   margin: 8px;
-  flex-basis: 20%;
+  flex-basis: 7%;
 `;
 
 export const IconTextBox = styled.div`

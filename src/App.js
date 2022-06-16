@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div style={{ overflowX: "hidden", overflowY: "hidden" }}>
+      <div style={{ overflow: "hidden" }}>
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
           <Navbar />
           <Home id="home" toggleTheme={toggleTheme} />

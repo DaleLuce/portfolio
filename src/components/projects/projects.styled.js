@@ -305,7 +305,8 @@ export const WordDiv = styled.div`
 export const Blurb = styled.div`
   text-align: justify;
   height: min-content;
-  margin: auto;
+  margin: 25px auto;
+
   left: 0;
   right: 0;
   font-size: 1.38em;

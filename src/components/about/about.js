@@ -23,7 +23,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 
 export function About() {
-  const iconWidth = "8vw";
+  const iconWidth = "6vw";
   const themeContext = useContext(ThemeContext);
   const fill = themeContext.four;
 
