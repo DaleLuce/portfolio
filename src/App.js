@@ -21,8 +21,8 @@ function App() {
     <>
       <div
         style={{
-          overflow: "auto",
-          minHeight: "100%",
+          overflow: "hidden",
+          minHeight: "120vh",
         }}
       >
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
