@@ -12,27 +12,27 @@ export const Title = styled.div`
   width: max-content;
   margin: auto;
   margin-bottom: 4vh;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   font-weight: 400;
   position: relative;
   z-index: 1;
-  top: 30px;
+  top: 10px;
   @media (max-width: 800px) {
-    font-size: 12vw;
+    font-size: 9vw;
   }
 
   &:after {
     content: "";
     background-color: #da4167;
-    height: 1vw;
+    height: 0.8vw;
     display: block;
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 19%;
+    bottom: 21%;
     z-index: -1;
     @media (max-width: 800px) {
-      height: 2.5vw;
+      height: 2.2vw;
       bottom: 20%;
     }
   }
@@ -69,24 +69,23 @@ export const NameBox = styled.input`
 `;
 
 export const FormDiv = styled.div`
-  margin: 2vh auto;
+  margin: auto;
+  top: 0px;
   width: 41vw;
   @media (max-width: 800px) {
     width: 75vw;
-    margin: 1vh auto;
+    margin: auto;
   }
 `;
 
 export const Submit = styled.div`
   width: max-content;
-  // font-size: 3em;
   font-size: 5vh;
   margin: auto;
   margin-top: 10px;
 
   @media (max-width: 800px) {
-    // font-size: 2em;
-    font-size: 5vh;
+    font-size: 3vh;
   }
 
   &:after {
