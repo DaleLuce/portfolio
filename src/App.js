@@ -22,15 +22,26 @@ function App() {
       <div
         style={{
           overflow: "hidden",
-          minHeight: "120vh",
+          heght: "100%",
         }}
       >
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-          <Navbar />
-          <Home id="home" toggleTheme={toggleTheme} />
-          <About id="about" />
-          <Projects id="projects" />
-          <Contact />
+          <div
+            style={{
+              position: "absolute",
+              top: "0",
+              bottom: "0",
+              left: "0",
+              right: "0",
+              overvlow: "auto",
+            }}
+          >
+            <Navbar />
+            <Home id="home" toggleTheme={toggleTheme} />
+            <About id="about" />
+            <Projects id="projects" />
+            <Contact style={{ overscrollBehavior: "contain" }} />
+          </div>
         </ThemeProvider>
       </div>
     </>

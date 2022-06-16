@@ -142,6 +142,7 @@ export const ContactIcons = styled.div`
   width: 38vw;
   @media (max-width: 800px) {
     width: 80vw;
+    top: 30px;
   }
 `;
 
