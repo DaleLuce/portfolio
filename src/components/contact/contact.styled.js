@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  height: 84vh;
-  min-height: 600px;
+  height: 88vh;
+  //min-height: 600px;
   margin: auto;
   color: #f4d35e;
   @media (max-width: 800px) {
-    height: 91vh;
+    // height: 91vh;
   }
 `;
 
@@ -89,7 +89,6 @@ export const Submit = styled.div`
   &:after {
     content: "";
     background-color: #da4167;
-    // height: 0.3em;
     height: 1vh;
     display: block;
     position: absolute;
@@ -105,7 +104,7 @@ export const Submit = styled.div`
 `;
 
 export const Thanks = styled.div`
-   width: max-content;
+  width: max-content;
   margin: auto;
   font-size: 8vw;
   font-weight: 600;
