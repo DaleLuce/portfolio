@@ -101,12 +101,7 @@ export function Contact() {
                 onChange={handleChange}
               ></ContentBox>
 
-              <Submit
-                type="submit"
-                value="Send"
-                onClick={handleSubmit}
-                // disabled={disableButton(formState)}
-              >
+              <Submit type="submit" value="Send" onClick={handleSubmit}>
                 Submit
               </Submit>
             </form>

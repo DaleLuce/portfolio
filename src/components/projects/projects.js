@@ -4,6 +4,7 @@ import {
   JobContainer,
   Title,
   TitleB,
+  TitleC,
   Image,
   Blurb,
   ImageDiv,
@@ -82,7 +83,8 @@ export function Projects() {
           href="https://cyndaquil-grace-shopper.herokuapp.com/"
           rel="noreferrer"
         >
-          <Title>Nyet</Title>
+          {/* <Title style={{ fontSize: "8vw" }}>Nyet</Title> */}
+          <TitleC>Nyet</TitleC>
         </Link>
         <MainDiv>
           <Link

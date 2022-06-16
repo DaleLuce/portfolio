@@ -4,7 +4,7 @@ export const Nav = styled.div`
   position: fixed;
   top: 0;
   z-index: 2;
-  height: 8vw;
+  height: 10vh;
   display: flex;
   align-items: end;
   justify-content: center;

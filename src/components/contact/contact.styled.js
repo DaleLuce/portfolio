@@ -2,12 +2,8 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   height: 88vh;
-  //min-height: 600px;
   margin: auto;
   color: #f4d35e;
-  @media (max-width: 800px) {
-    // height: 91vh;
-  }
 `;
 
 export const Title = styled.div`
@@ -33,7 +29,8 @@ export const Title = styled.div`
     bottom: 19%;
     z-index: -1;
     @media (max-width: 800px) {
-      height: 1.5vw;
+      height: 2.5vw;
+      bottom: 20%;
     }
   }
 `;
@@ -52,10 +49,13 @@ export const ContentBox = styled.textarea`
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
   width: 98%;
-  height: 1vh;
+  height: 10vh;
   font-size: 1.6em;
   padding-bottom: 5em;
   text-wrap: true;
+  @media (max-width: 800px) {
+    height: 3vh;
+  }
 `;
 
 export const NameBox = styled.input`
@@ -66,7 +66,7 @@ export const NameBox = styled.input`
 `;
 
 export const FormDiv = styled.div`
-  margin: 70px auto;
+  margin: 12vh auto;
   width: 41vw;
   @media (max-width: 800px) {
     width: 75vw;

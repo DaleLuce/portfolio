@@ -10,37 +10,14 @@ export const JobContainer = styled.div`
   flex-direction: row;
   position: relative;
   width: 100vw;
-  height: min-content;
+  height: max-content;
   flex-wrap: wrap;
 `;
-
-// export const JobContainerB = styled.div`
-//   background-color: ${(props) => props.theme.main};
-//   color: ${(props) => props.theme.secondary};
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: row;
-//   position: relative;
-//   width: 100vw;
-//   height: 75vh;
-//   flex-wrap: wrap;
-// `;
-
-// export const Card = styled.div`
-//   width: 95%;
-//   height: max-content;
-//   margin: 20px;
-//   border-radius: 30px;
-//   -webkit-box-shadow: 0px 0px 30px 12px rgba(0, 0, 0, 0.71);
-//   box-shadow: 0px 0px 30px 12px rgba(0, 0, 0, 0.71);
-//   background-color: gray;
-// `;
 
 export const MainDiv = styled.div`
   display: flex;
   margin: 38px;
   margin-bottom: 90px;
-  // margin-bottom: 80px;
   @media (max-width: 800px) {
     flex-direction: column;
   }
@@ -78,30 +55,31 @@ export const LinkB = styled.a`
 `;
 export const Title = styled.div`
   position: relative;
-  //width: 100%;
   font-size: 3vw;
+  text-align: center;
   font-weight: 700;
-  height: max-content;
-   margin: 40px;
+  margin: 40px;
   margin-bottom: 20px;
   z-index: 1;
+  
   @media (max-width: 800px) {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   &:after {
     content: "";
     background-color: ${(props) => props.theme.two};
-    height: 1vw;
+    height: .75vw;
     display: block;
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 15%;
+    bottom: 20%;
     z-index: -1;
-    // @media (max-width: 800px) {
-    //   height: 1.5vw;
-    // }
+    @media (max-width: 800px) {
+      height: 1.6vw;
+      bottom: 14%
+    }
     
   }
 
@@ -130,16 +108,17 @@ export const Title = styled.div`
 
 export const TitleB = styled.div`
   position: relative;
-  width: max-content;
-  font-size: 3vw;
-  color: ${(props) => props.theme.four};
+  font-size: 4vw;
+  text-align: center;
   font-weight: 700;
-  height: max-content;
-  margin: 20px;
+  margin: 40px;
   margin-bottom: 20px;
   z-index: 1;
+  color: ${(props) => props.theme.four};
+
+  
   @media (max-width: 800px) {
-    font-size: 4vw;
+    font-size: 7vw;
   }
 
   &:after {
@@ -150,32 +129,92 @@ export const TitleB = styled.div`
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 15%;
+    bottom: 22%;
     z-index: -1;
-    // @media (max-width: 800px) {
-    //   height: 1.5vw;
-    // }
+    @media (max-width: 800px) {
+      height: 2vw;
+    }
   }
 
      &:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.03);
+    transform: scale(1.17);
     
     &:after {
     transition: 0.2s ease-in-out;
-    transform: scale(1.03);
+    transform: scale(1.05);
     content: "";
     background-color: #da4167;
-    height: 1.15vw;
+    display: block;
+    position: absolute;
+    width: 100%;    
+    height: 1.3vw;
+    left: 0;
+    // bottom: 10%;
+    z-index: -1;
+     @media (max-width: 800px) {
+      height: 1.5vw;
+    }
+
+  }
+     &:active{
+    transition: 0.1s ease-in-out;
+    transform: scale(1.25);
+  `;
+export const TitleC = styled.div`
+  position: relative;
+  font-size: 5vw;
+  text-align: center;
+  font-weight: 700;
+  height: max-content;
+   margin: 40px;
+  margin-bottom: 20px;
+  z-index: 1;
+  @media (max-width: 800px) {
+    font-size: 10vw;
+  }
+
+  &:after {
+    content: "";
+    background-color: ${(props) => props.theme.two};
+    height: 1.6vw;
     display: block;
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 10%;
+    bottom: 20%;
     z-index: -1;
+    @media (max-width: 800px) {
+      height: 3vw;
+    }
+    
+  }
+
+    &:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+    
+    
+    &:after {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.08);
+    content: "";
+    background-color: ${(props) => props.theme.two};
+    height: 1.8vw;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 16%;
+    z-index: -1;
+      @media (max-width: 800px) {
+      transform: scale(1.2);
+      height: 4vw;
+      bottom: 16%;
+    }
 
   }
-     &:active{
+    &:active{
     transition: 0.1s ease-in-out;
     transform: scale(1.25);
 `;
@@ -188,7 +227,7 @@ export const Image = styled.img`
 `;
 
 export const TitleDiv = styled.div`
-  width: 50vw;
+  width: 100%;
   height: 20px;
   margin: auto;
   position: relative;
@@ -235,18 +274,18 @@ export const ImageDiv = styled.div`
 
   }
   &:active{
-    transition: 0.1s ease-in-out;
-    margin-left: 7vw;
+    transition: 0.3s ease-in-out;
+    transform: scale(.96);
     &:after {
     transition: 0.3s ease-in-out;
     content: "";
     background-color: ${(props) => props.theme.two};
     display: block;
     position: absolute;
-    width: 100%;
-    height: 95%;
-    left: -3%;
-    bottom: -3%;
+    width: 94%;
+    height: 94%;
+    left: -1%;
+    bottom: 4%;
     z-index: -1;
 
 
