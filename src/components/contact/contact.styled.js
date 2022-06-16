@@ -9,6 +9,7 @@ export const ContactContainer = styled.div`
 export const Title = styled.div`
   width: max-content;
   margin: auto;
+  margin-bottom: 4vh;
   font-size: 4.5vw;
   font-weight: 400;
   position: relative;
@@ -49,12 +50,12 @@ export const ContentBox = styled.textarea`
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
   width: 98%;
-  height: 10vh;
+  height: 6vh;
   font-size: 1.6em;
   padding-bottom: 5em;
   text-wrap: true;
   @media (max-width: 800px) {
-    height: 3vh;
+    height: 1vh;
   }
 `;
 
@@ -66,11 +67,11 @@ export const NameBox = styled.input`
 `;
 
 export const FormDiv = styled.div`
-  margin: 12vh auto;
+  margin: 2vh auto;
   width: 41vw;
   @media (max-width: 800px) {
     width: 75vw;
-    margin: 15vh auto;
+    margin: 1vh auto;
   }
 `;
 
@@ -129,4 +130,28 @@ justify-content: center;
     @media (max-width: 800px) {
       height: 1.5vw;
     }
+`;
+
+export const ContactIcons = styled.div`
+  justify-content: space-around;
+  margin: auto;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 38vw;
+  @media (max-width: 800px) {
+    width: 80vw;
+  }
+`;
+
+export const IconLink = styled.a`
+  text-decoration: none;
+  color: #f4d35e;
+  &:visited {
+    text-decoration: none;
+    decoration: none;
+    color: #f4d35e;
+  }
 `;

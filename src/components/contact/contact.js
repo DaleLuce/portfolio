@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useContext } from "react";
 import emailjs from "@emailjs/browser";
+import { ThemeContext } from "styled-components";
 
 import {
   ContactContainer,
@@ -8,8 +9,13 @@ import {
   NameBox,
   Thanks,
   Submit,
+  ContactIcons,
+  IconLink,
 } from "./contact.styled";
+import { IconBox, IconTextBox } from "../about/about.styled";
 import { FormDiv, Title } from "./contact.styled";
+import { ReactComponent as Github } from "../../assets/icons/github.svg";
+import { ReactComponent as Linkedin } from "../../assets/icons/linkedin.svg";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -63,6 +69,9 @@ export function Contact() {
       alert("Please complete the form before submitting!");
     }
   };
+  const iconWidth = "15vh";
+  const themeContext = useContext(ThemeContext);
+  const fill = "#da4167";
 
   return (
     <ContactContainer id="contactForm" className="contact">
@@ -106,6 +115,32 @@ export function Contact() {
               </Submit>
             </form>
           </FormDiv>
+          <ContactIcons>
+            <IconBox>
+              <IconLink href="https://www.linkedin.com/in/daleowenluce/">
+                <Linkedin
+                  fill={fill}
+                  width={iconWidth}
+                  style={{ height: "6vh" }}
+                />
+                <IconTextBox>LinkedIn</IconTextBox>
+              </IconLink>
+            </IconBox>
+            <IconBox>
+              <IconLink
+                href="https://github.com/daleluce
+"
+              >
+                <Github
+                  fill={fill}
+                  width={iconWidth}
+                  style={{ height: "6vh" }}
+                />
+
+                <IconTextBox>Github</IconTextBox>
+              </IconLink>
+            </IconBox>
+          </ContactIcons>
         </>
       ) : (
         <Thanks>Thanks!</Thanks>

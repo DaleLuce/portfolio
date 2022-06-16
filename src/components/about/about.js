@@ -26,8 +26,6 @@ export function About() {
   const iconWidth = "6vw";
   const themeContext = useContext(ThemeContext);
   const fill = themeContext.four;
-  const fillTwo = themeContext.one;
-  const fillThree = themeContext.six;
 
   return (
     <MainContainer id="aboutSection" className="typeB">

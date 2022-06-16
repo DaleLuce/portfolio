@@ -43,12 +43,16 @@ export const Icons = styled.div`
 `;
 
 export const IconBox = styled.div`
-  align-self: flex-end;
-  margin: 10px;
+  align-contents: center;
+  margin: auto;
 `;
 
 export const IconTextBox = styled.div`
   margin: auto;
-  font-size: 1vw;
+  font-size: 1.3vw;
   width: max-content;
+  @media (max-width: 800px) {
+    font-size: 4vw;
+    margin: auto;
+  }
 `;
