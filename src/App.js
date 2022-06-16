@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <>
+    <div style={{ overflowX: "hidden" }}>
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <Navbar />
         <Home id="home" toggleTheme={toggleTheme} />
@@ -26,7 +26,7 @@ function App() {
         <Projects id="projects" />
         <Contact />
       </ThemeProvider>
-    </>
+    </div>
   );
 }
 export default App;
