@@ -41,22 +41,6 @@ export const Lank = styled.div`
   }
 `;
 
-// export const StyledLank = styled(Lank)`
-//   &.${(props) => props.activeClassName} {
-//     &:after {
-//       content: "";
-//       background-color: #da4167;
-//       height: 1vw;
-//       display: block;
-//       position: absolute;
-//       width: 100%;
-//       left: 0;
-//       bottom: 15%;
-//       z-index: -1;
-//     }
-//   }
-// `;
-
 export const Links = styled.div`
   width: 80vw;
   display: flex;

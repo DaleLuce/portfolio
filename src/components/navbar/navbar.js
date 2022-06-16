@@ -15,7 +15,7 @@ export function Navbar() {
       <Links>
         <HashLink
           to={"/#homeSection"}
-          activeClassName="selected"
+          activeclassname="selected"
           style={linkStyle}
         >
           <Lank>Home</Lank>
@@ -23,24 +23,19 @@ export function Navbar() {
         <HashLink
           smooth
           to={"/#aboutSection"}
-          activeClassName="selected"
+          activeclassname="selected"
           style={linkStyle}
         >
           <Lank>About</Lank>
         </HashLink>
-        <HashLink
-          smooth
-          to={"/#projectSection"}
-          activeStyle={{ color: "black" }}
-          style={linkStyle}
-        >
+        <HashLink smooth to={"/#projectSection"} style={linkStyle}>
           <Lank>Projects</Lank>
         </HashLink>
 
         <HashLink
           smooth
           to={"/#contactForm"}
-          activeClassName="selected"
+          activeclassname="selected"
           style={linkStyle}
         >
           <Lank>Contact</Lank>
