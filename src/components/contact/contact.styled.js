@@ -4,6 +4,8 @@ export const ContactContainer = styled.div`
   height: 88vh;
   margin: auto;
   color: #f4d35e;
+  env(safe-area-inset-bottom, 10vh);
+
 `;
 
 export const Title = styled.div`
