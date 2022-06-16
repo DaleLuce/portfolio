@@ -31,9 +31,8 @@ export const LineBox = styled.div`
 `;
 
 export const Line = styled.div`
-  margin: auto;
   width: max-content;
-
+  // margin-left: -8vw;
   &:after {
     content: "";
     background-color: ${(props) => props.theme.two};
@@ -52,4 +51,7 @@ export const Line = styled.div`
 export const IntroBox = styled.div`
   width: 50vw;
   height: 500px;
+  @media (max-width: 700px) {
+    margin-left: -18vw;
+  }
 `;

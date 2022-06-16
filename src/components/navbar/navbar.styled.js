@@ -21,19 +21,6 @@ export const Lank = styled.div`
   font-weight: 700;
   margin-bottom: 1.38vh;
 
-
-  // &:after {
-  //   content: "";
-  //   background-color: #da4167;
-  //   height: 1vw;
-  //   display: block;
-  //   position: absolute;
-  //   width: 100%;
-  //   left: 0;
-  //   bottom: 15%;
-  //   z-index: -1;
-  // }
-
   &:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.05);

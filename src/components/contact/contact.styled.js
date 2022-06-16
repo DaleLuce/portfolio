@@ -39,48 +39,58 @@ export const Title = styled.div`
 `;
 
 export const FormLabel = styled.label`
-  font-size: clamp(20px, 4vw, 30px);
+  font-size: 1.6em;
+
   @media (max-width: 800px) {
     margin-bottom: 30px;
     margin-top: 30px;
+    font-size: 1.3em;
   }
 `;
 
 export const ContentBox = styled.textarea`
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
   width: 98%;
+  height: 1vh;
   font-size: 1.6em;
   padding-bottom: 5em;
   text-wrap: true;
 `;
 
 export const NameBox = styled.input`
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
   width: 98%;
-  font-size: 1.6em;
+  font-size: 1.4em;
 `;
 
 export const FormDiv = styled.div`
   margin: 70px auto;
-  width: 38vw;
-  // height; 40vh;
+  width: 41vw;
   @media (max-width: 800px) {
     width: 75vw;
+    margin: 15vh auto;
   }
 `;
 
 export const Submit = styled.div`
   width: max-content;
-  font-size: 3vw;
+  // font-size: 3em;
+  font-size: 5vh;
   margin: auto;
   margin-top: 10px;
 
   @media (max-width: 800px) {
-    font-size: 8vw;
+    // font-size: 2em;
+    font-size: 5vh;
   }
 
   &:after {
     content: "";
     background-color: #da4167;
-    height: 1.2vw;
+    // height: 0.3em;
+    height: 1vh;
     display: block;
     position: absolute;
     width: 100%;

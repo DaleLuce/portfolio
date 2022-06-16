@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import {
   ContactContainer,
@@ -13,38 +13,52 @@ import { FormDiv, Title } from "./contact.styled";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
-  const [formState, setFormState] = useState({
-    name: "",
-    contact: "",
-    content: "",
-  });
 
-  const url = "https://luce.codes";
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_1vkw3yt",
+        "template_38",
+        form.current,
+        "Y8MxJmZlUIwstGaKp"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+  const [formState, setFormState] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
 
   const disableButton = (formState) => {
     for (let key in formState) {
-      if (!formState[key]) return true;
+      if (!formState[key]) {
+        return true;
+      }
     }
     return false;
   };
 
+  //allows the disableButton function to work
   const handleChange = (evt) => {
     setFormState({ ...formState, [evt.target.name]: evt.target.value });
   };
 
   const handleSubmit = async (evt) => {
-    if (!disableButton(formState)) {
+    if (disableButton(formState) === false) {
       setSent(true);
-      try {
-        const { contact, content, name } = formState;
-        await axios.post("https://luce.codes:4000/send_mail", {
-          contact,
-          content,
-          name,
-        });
-      } catch (error) {
-        console.log(error);
-      }
+      sendEmail(evt);
     } else {
       alert("Please complete the form before submitting!");
     }
@@ -56,13 +70,13 @@ export function Contact() {
         <>
           <Title>Get in touch!</Title>
           <FormDiv>
-            <form>
+            <form onSubmit={sendEmail} ref={form}>
               <FormLabel htmlFor="name">Who are you?</FormLabel>
               <br></br>
               <NameBox
                 type="text"
                 id="name"
-                name="name"
+                name="user_name"
                 onChange={handleChange}
               ></NameBox>
               <br></br>
@@ -74,7 +88,7 @@ export function Contact() {
               <NameBox
                 type="text"
                 id="contact"
-                name="contact"
+                name="user_email"
                 onChange={handleChange}
               ></NameBox>
               <br></br>
@@ -83,15 +97,15 @@ export function Contact() {
               <ContentBox
                 type="text"
                 id="content"
-                name="content"
+                name="message"
                 onChange={handleChange}
               ></ContentBox>
 
               <Submit
                 type="submit"
-                value="submit"
+                value="Send"
                 onClick={handleSubmit}
-                disabled={disableButton(formState)}
+                // disabled={disableButton(formState)}
               >
                 Submit
               </Submit>
