@@ -23,7 +23,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 
 export function About() {
-  const iconWidth = "6vw";
+  const iconWidth = "8vw";
   const themeContext = useContext(ThemeContext);
   const fill = themeContext.four;
 
@@ -45,41 +45,77 @@ export function About() {
       </AboutContainer>
       <Icons>
         <IconBox>
-          <JavaScript fill={fill} width={iconWidth} />
+          <JavaScript
+            fill={fill}
+            width={iconWidth}
+            style={{ display: "block", margin: "auto" }}
+          />
           <IconTextBox>Javascript</IconTextBox>
         </IconBox>
 
         <IconBox>
-          <Html fill={fill} width={iconWidth} />
+          <Html
+            fill={fill}
+            width={iconWidth}
+            style={{ display: "block", margin: "auto" }}
+          />
           <IconTextBox>HTML5</IconTextBox>
         </IconBox>
 
         <IconBox>
-          <Css fill={fill} width={iconWidth} />
+          <Css
+            fill={fill}
+            width={iconWidth}
+            style={{ display: "block", margin: "auto" }}
+          />
           <IconTextBox>CSS3</IconTextBox>
         </IconBox>
         <IconBox>
-          <ReactIcon fill={fill} width={iconWidth} />
+          <ReactIcon
+            fill={fill}
+            width={iconWidth}
+            style={{ display: "block", margin: "auto" }}
+          />
           <IconTextBox>React</IconTextBox>
         </IconBox>
         <IconBox>
-          <Redux fill={fill} width={iconWidth} />
+          <Redux
+            fill={fill}
+            width={iconWidth}
+            style={{ display: "block", margin: "auto" }}
+          />
           <IconTextBox>Redux</IconTextBox>
         </IconBox>
         <IconBox>
-          <Sass fill={fill} width={iconWidth} />
+          <Sass
+            fill={fill}
+            width={iconWidth}
+            style={{ display: "block", margin: "auto" }}
+          />
           <IconTextBox>Sass</IconTextBox>
         </IconBox>
         <IconBox>
-          <Sequelize fill={fill} width={iconWidth} />
+          <Sequelize
+            fill={fill}
+            width={iconWidth}
+            style={{ display: "block", margin: "auto" }}
+          />
           <IconTextBox>Sequelize</IconTextBox>
         </IconBox>
         <IconBox>
-          <Node fill={fill} width={iconWidth} />
+          <Node
+            fill={fill}
+            width={iconWidth}
+            style={{ display: "block", margin: "auto" }}
+          />
           <IconTextBox>Node.JS</IconTextBox>
         </IconBox>
         <IconBox>
-          <Postgres fill={fill} width={iconWidth} />
+          <Postgres
+            fill={fill}
+            width={iconWidth}
+            style={{ display: "block", margin: "auto" }}
+          />
           <IconTextBox>Postgres</IconTextBox>
         </IconBox>
       </Icons>

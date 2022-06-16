@@ -33,7 +33,7 @@ export const AboutText = styled.div`
 `;
 
 export const Icons = styled.div`
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -43,16 +43,17 @@ export const Icons = styled.div`
 `;
 
 export const IconBox = styled.div`
-  align-contents: center;
-  margin: auto;
+  margin: 8px;
+  flex-basis: 20%;
 `;
 
 export const IconTextBox = styled.div`
   margin: auto;
   font-size: 1.3vw;
   width: max-content;
+
   @media (max-width: 800px) {
-    font-size: 4vw;
+    font-size: 2vw;
     margin: auto;
   }
 `;
