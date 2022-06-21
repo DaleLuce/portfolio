@@ -32,9 +32,9 @@ export function About() {
       <AboutContainer>
         <AboutText>
           I am a fullstack web developer based in NYC. I have a background in
-          print and small business development, and I am a passionate life long
+          print and small business development, and I am a passionate lifelong
           learner with an insatiable curiosity. I strive to build attractive,
-          elegant and efficient solutions to whatever problems I'm trying to
+          elegant, and efficient solutions to whatever problems I'm trying to
           solve. <br />
           <br />
           When I'm not building software, I enjoy riding bikes around the city,
@@ -120,8 +120,8 @@ export function About() {
         </IconBox>
       </Icons>
       <AboutText>
-        I can help your company or organization build custom web sites,
-        e-commerce sites &amp; applications. On top of writing code, I enjoy
+        I can help your company or organization build custom static websites,
+        e-commerce sites, &amp; applications. On top of writing code, I enjoy
         UI/UX design, illustration, and graphic design.
       </AboutText>
     </MainContainer>
