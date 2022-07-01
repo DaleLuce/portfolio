@@ -121,7 +121,7 @@ export function About() {
       </Icons>
       <AboutText>
         I can help your company or organization build custom web sites,
-        e-commerce sites &amp; applications. On top of writing code, I enjoy
+        Ecommerce sites &amp; applications. On top of writing code, I enjoy
         UI/UX design, illustration, and graphic design.
       </AboutText>
     </MainContainer>
