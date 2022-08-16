@@ -13,7 +13,7 @@ export const MainContainer = styled.div`
 
 export const Intro = styled.div`
   position: absolute;
-  top: 44vh;
+  top: 45vh;
   font-size: clamp(2em, 5vw, 5em);
   font-weight: 800;
   width: max-content;
@@ -22,7 +22,7 @@ export const Intro = styled.div`
 
 export const LineBox = styled.div`
   position: absolute;
-  top: 50vh;
+  top: 53vh;
   font-size: clamp(2em, 5vw, 5em);
 
   font-weight: 800;
@@ -57,6 +57,6 @@ export const IntroBox = styled.div`
 
 export const SubHead = styled.div`
   position: absolute;
-  top: 58vh;
+  top: 65vh;
   width: 50vw;
 `;

@@ -5,7 +5,6 @@ let blue = "#083d77";
 let pink = "#da4167";
 let yellow = "#f4d35e";
 let gray = "#2e4057";
-let mobile = "700px";
 
 export const lightTheme = {
   one: pink,
@@ -26,11 +25,6 @@ export const darkTheme = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-// one pink = blue
-// two blue = pink
-// three beige = gray
-// four blue = yellow
-// five blue = gray
 
 .typeA{
   background-color: ${(props) => props.theme.one};
@@ -44,19 +38,3 @@ export const GlobalStyles = createGlobalStyle`
   background-color:${(props) => props.theme.five};
 }
 `;
-
-// home / job 1/ job 3
-// bg pink blue          one var --
-// color yellow yellow   static --
-// underline blue pink    two var --
-
-// job 2 / about
-// bg beige gray         three var --
-// color blue yellow     four var --
-// text underline pink    static --
-// screenshop underline blue/pink two var
-
-// tactcon
-// bg blue gray           five var --
-// color yellow yellow     static
-// underline pink pink     static
