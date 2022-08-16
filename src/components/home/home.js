@@ -30,8 +30,8 @@ export function Home({ toggleTheme }) {
             <Line>My Name is Dale.</Line>
           </LineBox>
           <SubHead>
-            I am seeking a challenging frontend software engineering role at a
-            mission drive technology company.
+            I am seeking a challenging frontend or fullstack software
+            engineering role at a mission drive technology company.
           </SubHead>
         </IntroBox>
       </MainContainer>
