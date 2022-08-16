@@ -1,5 +1,12 @@
 import React from "react";
-import { MainContainer, Intro, Line, LineBox, IntroBox } from "./home.styled";
+import {
+  MainContainer,
+  Intro,
+  Line,
+  LineBox,
+  IntroBox,
+  SubHead,
+} from "./home.styled";
 
 import { GlobalStyles } from "../../themes.js";
 
@@ -22,6 +29,10 @@ export function Home({ toggleTheme }) {
           <LineBox>
             <Line>My Name is Dale.</Line>
           </LineBox>
+          <SubHead>
+            I am seeking a challenging frontend software engineering role at a
+            mission drive technology company.
+          </SubHead>
         </IntroBox>
       </MainContainer>
     </>

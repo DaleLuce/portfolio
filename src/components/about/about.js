@@ -120,13 +120,10 @@ export function About() {
         </IconBox>
       </Icons>
       <AboutText>
-<<<<<<< HEAD
         I can help your company or organization build custom web sites,
-        Ecommerce sites &amp; applications. On top of writing code, I enjoy
-=======
-        I can help your company or organization build custom static websites,
+        Ecommerce sites &amp; applications. On top of writing code, I enjoy I
+        can help your company or organization build custom static websites,
         e-commerce sites, &amp; applications. On top of writing code, I enjoy
->>>>>>> caa6d41030a3f4074881e0a2e72820f98e04559b
         UI/UX design, illustration, and graphic design.
       </AboutText>
     </MainContainer>

@@ -13,7 +13,7 @@ export const MainContainer = styled.div`
 
 export const Intro = styled.div`
   position: absolute;
-  top: 40vh;
+  top: 44vh;
   font-size: clamp(2em, 5vw, 5em);
   font-weight: 800;
   width: max-content;
@@ -32,7 +32,6 @@ export const LineBox = styled.div`
 
 export const Line = styled.div`
   width: max-content;
-  // margin-left: -8vw;
   &:after {
     content: "";
     background-color: ${(props) => props.theme.two};
@@ -54,4 +53,10 @@ export const IntroBox = styled.div`
   @media (max-width: 700px) {
     margin-left: -18vw;
   }
+`;
+
+export const SubHead = styled.div`
+  position: absolute;
+  top: 58vh;
+  width: 50vw;
 `;
