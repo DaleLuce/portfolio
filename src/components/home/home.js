@@ -31,7 +31,7 @@ export function Home({ toggleTheme }) {
           </LineBox>
           <SubHead>
             I am seeking a challenging frontend or fullstack software
-            engineering role at a mission drive technology company.
+            engineering role at a mission driven technology company.
           </SubHead>
         </IntroBox>
       </MainContainer>
